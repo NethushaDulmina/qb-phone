@@ -1,7 +1,7 @@
 fx_version 'bodacious'
 game 'gta5'
 
-description 'QB-Phone Customized For NeGuru Server'
+description 'QB-Phone With Passcode'
 version '1.3.0'
 
 ui_page 'html/index.html'

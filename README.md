@@ -32,24 +32,11 @@ Advanced Phone for QB-Core Framework :iphone:
 
 
 ## Screenshots
-![Home](https://cdn.discordapp.com/attachments/921675245360922625/921675439783673897/home.jpg)
-![Bank](https://cdn.discordapp.com/attachments/921675245360922625/921675441142644756/bank.jpg)
-![Advert](https://cdn.discordapp.com/attachments/921675245360922625/921675440878415872/advert.jpg)
-![Mail](https://cdn.discordapp.com/attachments/921675245360922625/921675440278614068/mail.jpg)
-![Garage](https://cdn.discordapp.com/attachments/921675245360922625/921675439590760528/garage.jpg)
-![Garage Detail](https://cdn.discordapp.com/attachments/921675245360922625/921675441591422986/garage_in.jpg)
-![services](https://cdn.discordapp.com/attachments/921675245360922625/921675458670641152/services.jpg)
-![Houses](https://cdn.discordapp.com/attachments/921675245360922625/921675440005988362/house.jpg)
-![Racing](https://cdn.discordapp.com/attachments/921675245360922625/921675458423173140/race.jpg)
-![Crypto](https://cdn.discordapp.com/attachments/921675245360922625/921675457718517820/qbit.jpg)
-![Gallery](https://cdn.discordapp.com/attachments/921675245360922625/921675441381736448/gallery.jpg)
-![MEOS](https://cdn.discordapp.com/attachments/921675245360922625/921675440488341534/meos.jpg)
-![Twitter](https://cdn.discordapp.com/attachments/921675245360922625/921675459270438922/twitter.jpg)
-![Settings](https://cdn.discordapp.com/attachments/921675245360922625/921675458905513984/setting.jpg)
-![Whatsapp](https://cdn.discordapp.com/attachments/921675245360922625/921675459517906944/whatsapp.jpg)
-![Phone](https://cdn.discordapp.com/attachments/921675245360922625/921675440677064745/phone.jpg)
+![Home](https://media.discordapp.net/attachments/1006211275707138098/1177824135066427393/image.png)
+![LockScreen](https://media.discordapp.net/attachments/1006211275707138098/1177823851506319360/image.png)
 
 ## Features
+- Passcode
 - Garages app to see your vehicle details
 - Mails to inform the player
 - Banking app to see balance and transfer money
@@ -75,27 +62,16 @@ ensure qb-garages
 ensure qb-banking
 ```
 
-## Configuration
+## Passcode Configuration
 ```
+Config.passcode = "1234";
 
-Config = Config or {}
+```
+## Configuration
 
-Config.RepeatTimeout = 2000 -- Timeout for unanswered call notification
-Config.CallRepeats = 10 -- Repeats for unanswered call notification
-Config.OpenPhone = 244 -- Key to open phone display
-Config.PhoneApplications = {
-    ["phone"] = { -- Needs to be unique
-        app = "phone", -- App route
-        color = "#04b543", -- App icon color
-        icon = "fa fa-phone-alt", -- App icon
-        tooltipText = "Phone", -- App name
-        tooltipPos = "top",
-        job = false, -- Job requirement
-        blockedjobs = {}, -- Jobs cannot use this app
-        slot = 1, -- App position
-        Alerts = 0, -- Alert count
-    },
-}
+```
+Config.AllowWalking = false
+
 ```
 ## Setup Webhook in `server/main.lua` for photos
 Set the following variable to your webhook (For example, a Discord channel or Imgur webhook)
