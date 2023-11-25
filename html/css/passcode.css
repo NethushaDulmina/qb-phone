@@ -1,0 +1,196 @@
+
+.iphone-pass {
+    display: none;
+    border-radius: 40px;
+    width: 336px;
+    height: 675px;
+    border-radius: 47px;
+    bottom: 0.6vh;
+    right: 0vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    z-index: 140;
+}
+
+.iphone-pass .inner .home.cam {
+	animation: none;
+}
+
+.iphone-pass .inner .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.iphone-pass .inner .content .lock {
+    position: relative;
+    margin-top: 30px;
+    top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+
+	html, body {
+		overflow: hidden;
+	}
+
+	.main {
+		transform: scale(0.7);
+	}
+
+	.iphone-pass .inner .content .top {
+		height: 70px !important;
+	}
+
+	.iphone-pass .inner .content .bottom {
+		top: 261% !important;
+		height: 150px !important;
+	}
+
+	.iphone-pass .inner .content .bottom .main {
+    position: relative !important;
+    left: -100px !important;
+    width: 150% !important;
+    bottom: 20px !important;
+		gap: 140px !important;
+	}
+
+	.iphone-pass .inner .content .bottom .main .photos {
+		width: 60px !important;
+		height: 60px !important;
+	}
+
+	.iphone-pass .inner .content .bottom .main .border {
+		width: 80px !important;
+		height: 80px !important;
+	}
+
+	.iphone-pass .inner .content .bottom .main .border .capture {
+		width: 70px !important;
+		height: 70px !important;
+	}
+
+	.iphone-pass .inner .content .bottom .main .rotate {
+		width: 40px !important;
+		height: 35px !important;
+	}
+}
+
+
+.iphone-pass.passcode .inner.passcode {
+    font-family: 'Space Mono', monospace;
+	background-color: #191b2c;
+	border-radius: 30px;
+}
+
+.iphone-pass .inner .content .passcode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.iphone-pass .inner .content .passcode h3 {
+	margin-top: 60px;
+	font-size: 25px;
+    color: white;
+}
+
+.iphone-pass .inner .content .passcode .dots {
+	margin-top: 20px;
+	display: flex;
+	gap: 25px;
+}
+
+.iphone-pass .inner .content .passcode .dots .dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	transition-duration: 0.1s;
+}
+
+.iphone-pass .inner .content .passcode .keypad {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	width: 90%;
+    margin-top: 60px;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Space+Mono&display=swap');
+
+.iphone-pass .inner .content .passcode .keypad .key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #5c5e6c;
+    border: none;
+    width: 68px;
+    height: 67px;
+    color: #fff;
+    margin-top: -11px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-family: 'Space Mono', monospace;
+}
+
+.iphone-pass .inner .content .passcode .keypad .key:active {
+	background-color: #999cb4;
+}
+
+.iphone-pass .inner .content .passcode .keypad .key .num {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.iphone-pass .inner .content .passcode .keypad .key .num.alone {
+	padding-bottom: 10px
+}
+
+.iphone-pass .inner .content .passcode .keypad .key .letters {
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+
+.iphone-pass .inner .content .bottom {
+	margin-top: 100px;
+	display: flex;
+	font-size: 16px;
+	gap: 170px;
+}
+
+.iphone-pass .inner .content .bottom p {
+	cursor: pointer;
+}
+
+.iphone-pass .inner .content .bottom p:active {	
+	color: #696a75;
+}
+
+
+.iphone-pass.passcode .dash.bottom {
+	top: 64px;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
